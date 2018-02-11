@@ -15,8 +15,7 @@ function save_change(){
         success: function (data) {
             if (data.status) //if success close modal and reload ajax table
             {
-                //location.reload();
-
+                location.reload();
             } else {
                 for (var i = 0; i < data.inputerror.length; i++) {
                     $('[name="' + data.inputerror[i] + '"]').parent().parent().addClass('has-error');
