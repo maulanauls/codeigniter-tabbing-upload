@@ -46,7 +46,7 @@
     <div class="tab-pane fade" id="result" role="tabpanel" aria-labelledby="result-tab">
         <hr>
         <?php foreach($users as $list){ ?>
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="float:left; width: 18rem;">
             <img class="card-img-top" src="<?=base_url('assets/upload-file');?>/<?=$list->file;?>" alt="<?=$list->title;?>">
             <div class="card-body">
                 <h5 class="card-title"><?=$list->firstname;?>&nbsp;<?=$list->lastname;?></h5>
